@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimizador de Productividad Empresarial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="indice.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Optimizador de Productividad Empresarial</h1>
+        </div>
+    </header>
+    <main class="container">
+        <input type="file" id="fileUpload" accept=".csv, .xlsx, .xls">
+        <label for="fileUpload" class="btn">Subir archivo CSV o Excel</label>
+        <a href="https://websim-creation-engine.ai/business-productivity-optimizer/plantilla_ventas.csv" download
+            class="btn">Descargar plantilla CSV</a>
+        <div id="message"></div>
+        <div id="analysisResults"></div>
+        <div class="charts">
+            <div class="chart-container">
+                <canvas id="salesBarChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="salesLineChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="salesScatterChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/locale/es.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.0.0/dist/chartjs-adapter-moment.min.js"></script>
+    <script src="indice.js"></script>
+</body>
+
+</html>
